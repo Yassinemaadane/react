@@ -1,6 +1,6 @@
 pipeline {
     agent any           
-        
+        stages{
          stage('build image') {
             steps {
                bat 'docker build -t yassinemaadane/react-app .'
@@ -15,5 +15,5 @@ pipeline {
             }
          }
        
-    
+        }
 }
